@@ -1,0 +1,153 @@
+body {
+	font-size: 14px;
+	line-height: 18px;
+	color: $black;
+	font-family: $regular;
+	background-color: #fff;
+	min-width: 320px; 
+}
+
+a {
+	color: $grey;
+	text-decoration: none;
+}
+
+p {
+	font-weight: 300;
+}
+
+
+
+b, strong {
+	font-weight: 500;
+}
+
+//Grid
+//-------------------------------------------------------------------------------------
+
+.row {
+	margin-left: -20px;
+	*zoom: 1;
+}
+
+.row:before,
+.row:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.row:after {
+ 	clear: both;
+}
+
+[class*="span"] {
+	float: left;
+	min-height: 1px;
+	margin-left: 20px;
+}
+
+.container
+ {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.span12 {
+ 	width: 960px;
+}
+
+.span11 {
+ 	width: 880px;
+}
+
+.span10 {
+ 	width: 800px;
+}
+
+.span9 {
+ 	width: 720px;
+}
+
+.span8 {
+ 	width: 640px;
+}
+
+.span7 {
+ 	width: 560px;
+}
+
+.span6 {
+ 	width: 480px;
+}
+
+.span5 {
+ 	width: 400px;
+}
+
+.span4 {
+ 	width: 320px;
+}
+
+.span3 {
+ 	width: 240px;
+}
+
+.span2 {
+ 	width: 160px;
+}
+
+.span1 {
+ 	width: 80px;
+}
+
+.offset12 {
+ 	margin-left: 1000px;
+}
+
+.offset11 {
+ 	margin-left: 920px;
+}
+
+.offset10 {
+ 	margin-left: 840px;
+}
+
+.offset9 {
+ 	margin-left: 760px;
+}
+
+.offset8 {
+ 	margin-left: 680px;
+}
+
+.offset7 {
+ 	margin-left: 600px;
+}
+
+.offset6 {
+ 	margin-left: 520px;
+}
+
+.offset5 {
+ 	margin-left: 440px;
+}
+
+.offset4 {
+ 	margin-left: 360px;
+}
+
+.offset3 {
+ 	margin-left: 280px;
+}
+
+.offset2 {
+ 	margin-left: 200px;
+}
+
+.offset1 {
+ 	margin-left: 120px;
+}
+
+

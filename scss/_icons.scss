@@ -1,0 +1,33 @@
+/* @import "compass/css3";
+
+$icon: sprite-map("icons.png", $spacing: 5px);
+
+[class*="icon-"]{
+	display: inline-block;
+}
+
+
+// Define blok width and height 
+//such as image's  width and height
+@mixin image-size($path){
+	width: image-width($path);
+	height: image-height($path);
+}
+
+// Sprite mixin
+@mixin sprite($map, $sprite, $width-height:1){
+	background: sprite($map,  $sprite) no-repeat;
+
+	@if $width-height == 1
+	{
+		@include image-size(sprite-file($map, $sprite));
+	}
+	@else{}
+}
+
+// Custom Icons
+
+.icon-logo {
+	@include sprite($icons, icon-logo);
+}
+ */
