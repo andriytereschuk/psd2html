@@ -1,11 +1,6 @@
-/* @import "compass/css3";
+@import "compass/css3";
 
-$icon: sprite-map("icons.png", $spacing: 5px);
-
-[class*="icon-"]{
-	display: inline-block;
-}
-
+$icon: sprite-map("icons/*.png", $spacing: 5px);
 
 // Define blok width and height 
 //such as image's  width and height
@@ -27,7 +22,43 @@ $icon: sprite-map("icons.png", $spacing: 5px);
 
 // Custom Icons
 
-.icon-logo {
-	@include sprite($icons, icon-logo);
+.icon-phone:before {
+	@include sprite($icon, icon-phone);
 }
- */
+
+.icon-mail:before {
+	@include sprite($icon, icon-mail);
+}
+
+.icon-d1:before {
+	@include sprite($icon, icon-d1);
+}
+
+.icon-d2:before {
+	@include sprite($icon, icon-d2);
+}
+
+
+.icon-d3:before {
+	@include sprite($icon, icon-d3);
+}
+
+.icon-s1:before {
+	@include sprite($icon, icon-s1);
+}
+
+.icon-s2:before {
+	@include sprite($icon, icon-s2);
+}
+
+.icon-s3:before {
+	@include sprite($icon, icon-s3);
+}
+
+.icon-s4:before {
+	@include sprite($icon, icon-s4);
+}
+.icon-s5:before {
+	@include sprite($icon, icon-s5);
+}
+

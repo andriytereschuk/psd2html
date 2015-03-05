@@ -2,3 +2,218 @@ header {
 	background-color: $bg;
 	height: 112px;
 }
+
+.logo {
+	display: block;
+	float: left;
+	margin-top: 20px;
+}
+
+nav {
+	float: left;
+	margin-top: 46px;
+	margin-left: 60px;
+
+	li {
+		display: inline;
+		padding-left: 30px;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		a {
+			font-size: 18px;
+			color: #aeaeae;
+			line-height: 22px;
+			font-family: $bold;
+			@include ts;
+
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+}
+
+.order-now {
+	width: 128px;
+	height: 38px;
+	line-height: 38px;
+	float: left;
+	margin-top: 38px;
+	margin-left: 42px;
+}
+
+
+
+.btn {
+	display: block;
+	background-color: $red;
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+	font-family: $bold;
+	font-size: 16px;
+	@include ts;
+
+	&:hover {
+		background-color: $hover;
+	}
+}
+
+.contact-right {
+	float: right;
+	padding-top: 40px;
+	text-align: right;
+}
+
+.icon {
+	position: relative;
+	display: block;
+	margin: 0;
+	vertical-align: top;
+	text-overflow: ellipsis;
+}
+
+.icon-left:before {
+	float: left;
+	display: inline-block;
+	margin: 1px 7px 0 0;
+	vertical-align: inherit;
+	pointer-events: none;
+	content:"";
+}
+
+.phone {
+	font-size: 17px;
+	font-family: $light;
+	color: $grey;
+	margin-bottom: 4px;
+}
+
+.icon-right:before {
+	float: right;
+	display: inline-block;
+	margin: 0 0 0px 7px;
+	vertical-align: inherit;
+	pointer-events: none;
+	content:"";
+}
+
+.link-mail {
+	color: $red;
+	border-bottom: 1px dotted $red;
+	font-size: 15px;
+	font-family: $light;
+	display: inline-block;
+	margin-right: 20px;
+	@include ts;
+
+	&:before {
+		position: absolute;
+		right: -20px;
+		top: 3px;
+	}
+
+	&:hover {
+		border-bottom: 1px dotted transparent;
+	}
+}
+
+.orter-title {
+	h1 {
+		font-size: 41px;
+		font-family: $bold;
+		padding: 60px 0 40px 0;
+		text-align: center;
+		line-height: 41px;
+	}
+}
+
+.order-details {
+	margin-left: 60px;
+	margin-bottom: 55px;
+
+	.icon {
+		font-size: 20px;
+		color: #767676;
+		margin-left: 40px;
+		float: left;
+	}
+
+	.icon-left:before {
+	  margin: -2px 15px 0 0;
+	}
+}
+
+.order-steps {
+	height: 90px;
+	background-color: $green;
+
+	.container {
+		padding-top: 48px;
+
+		&:before {
+			@include cont;
+			height: 1px;
+			width: 800px;
+			left: 50%;
+			margin-left: -400px;
+			top: 28px;
+			background-color: #fff;
+		}
+	}
+
+	a {
+		color: #fff;
+		font-size: 17px;
+		line-height: 26px;
+		display: inline-block;
+		margin-left: 56px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:before {
+			margin: 0 9px 0 0;
+		}
+
+		&:after {
+			position: absolute;
+			display: block;
+			left: 50%;
+			top: -33px;
+			width: 50px;
+			margin-left: -25px;
+			height: 24px;
+			text-align: center;
+			line-height: 24px;
+			background-color: $green;
+			background-image: url('../images/elipse.png');
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+	}
+}
+
+.s1:after {
+	content:"1";
+}
+
+.s2:after {
+	content:"2";
+}
+
+.s3:after {
+	content:"3";
+}
+
+.s4:after {
+	content:"4";
+}
+
+.s5:after {
+	content:"5";
+}

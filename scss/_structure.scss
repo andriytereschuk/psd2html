@@ -4,7 +4,10 @@ body {
 	color: $black;
 	font-family: $regular;
 	background-color: #fff;
-	min-width: 320px; 
+	min-width: 320px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
 }
 
 a {
@@ -151,3 +154,8 @@ b, strong {
 }
 
 
+[class*="span"] {
+	float: left;
+	min-height: 1px;
+	margin-left: 20px;
+}
